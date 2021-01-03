@@ -1,0 +1,20 @@
+<%- include('partials/header'); -%>
+
+<form action="/register" method="POST">
+  <h2>Sign up</h2>
+  <label for="name">Name</label>
+  <input type="text" name="name" required />
+  <div class="name error"></div>
+
+  <label for="email">Email</label>
+  <input type="text" name="email" required />
+  <div class="email error"></div>
+
+  <label for="password">Password</label>
+  <input type="password" name="password" required />
+  <div class="password error"></div>
+  <button>Sign up</button>
+</form>
+
+<%- include('partials/footer'); -%>
+

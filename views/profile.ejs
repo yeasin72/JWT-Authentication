@@ -1,0 +1,15 @@
+<%- include('partials/header'); -%>
+
+<header>
+  <div class="smoothie">
+    <img src="<%= userinfo.profilepicture %>" alt="">
+  </div>
+  <div class="headings">
+    <h2>Hello <%= userinfo.name %></h2>
+    <h3><%= userinfo.email %></h3>
+    <a href="/account" class="btn">More details</a>
+  </div>
+</header>
+
+
+<%- include('partials/footer'); -%>
